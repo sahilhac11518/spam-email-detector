@@ -1,27 +1,14 @@
 from flask import Flask, request, jsonify, render_template
-# # Loading
-# with open("spam_model.pkl", "rb") as f:
-#     model = pickle.load(f)
+import joblib
 
-# with open("vectorizer.pkl", "rb") as f:
-#     vectorizer = pickle.load(f)
-# import joblib
-
-from flask import Flask, request, jsonify, render_template
-import joblib   # <-- add this
-
-# Load model
+# Load the entire model pipeline (including vectorizer + classifier)
 model = joblib.load("spam_model.pkl")
-
-# Load vectorizer
-vectorizer = joblib.load("vectorizer.pkl")
 
 app = Flask(__name__)
 
-
 @app.route("/")
 def home():
-    return render_template("spam_email.html")  # HTML in templates folder
+    return render_template("spam_email.html")  # HTML in 'templates/' folder
 
 @app.route("/predict", methods=["POST"])
 def predict():
@@ -31,10 +18,10 @@ def predict():
     if not email_text.strip():
         return jsonify({"error": "Empty email text"}), 400
 
-    features = vectorizer.transform([email_text])
-    prediction = model.predict(features)[0]
+    # Predict using the model pipeline
+    prediction = model.predict([email_text])  # wrap input in list
 
-    result = "Spam" if prediction == 1 else "Not Spam"
+    result = "Spam" if prediction[0] == 1 else "Not Spam"
     return jsonify({"result": result})
 
 if __name__ == "__main__":

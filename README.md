@@ -22,5 +22,3 @@ The dataset is too large to store in this repository.
 
 After downloading, place it inside the `Dataset/` folder:
 
-
-After downloading, place it inside the `Dataset/` folder:

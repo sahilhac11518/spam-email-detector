@@ -4,6 +4,10 @@ This project is a **Spam Email Classifier** built using Machine Learning and Nat
 It can classify emails as **Spam** or **Not Spam** based on their content.
 
 ---
+## 👀 Project Preview
+
+![Spam Email Detection Preview 1](assets/Screenshot_2025-09-16_140436.png)
+
 
 ## 🚀 Features
 - Preprocessing of email text (lowercasing, removing symbols, stopwords, etc.)

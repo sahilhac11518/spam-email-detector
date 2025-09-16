@@ -1,0 +1,18 @@
+
+scikit-learn==1.3.0
+pandas==2.1.0
+numpy==1.25.2
+Flask==2.3.3
+joblib==1.3.2
+
+
+Optional additions:
+
+jupyterlab==4.0.5
+matplotlib==3.7.2
+
+Preprocessing (pandas, numpy)
+Machine learning (scikit-learn)
+Model serialization (joblib or pickle)
+Web interface (html,css,js)
+Optional (Jupyter for notebooks)

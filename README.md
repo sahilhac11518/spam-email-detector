@@ -6,7 +6,7 @@ It can classify emails as **Spam** or **Not Spam** based on their content.
 ---
 ## 👀 Project Preview
 
-![Spam Email Detection Preview 1](preview/Screenshot_2025-09-16_140436.png)
+![Spam Email Detection Preview 1](Preview/Screenshot_2025-09-16_140436.png)
 
 
 ## 🚀 Features

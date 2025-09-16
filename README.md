@@ -6,8 +6,10 @@ It can classify emails as **Spam** or **Not Spam** based on their content.
 ---
 ## 👀 Project Preview
 
-![Spam Email Detection Preview 1](Preview/Screenshot_2025-09-16_140436.png)
+![Spam Email Detection Preview 1](Preview/Screenshot%202025-09-16%20140436.png)
 
+
+---
 
 ## 🚀 Features
 - Preprocessing of email text (lowercasing, removing symbols, stopwords, etc.)
@@ -26,3 +28,4 @@ The dataset is too large to store in this repository.
 
 After downloading, place it inside the `Dataset/` folder:
 
+![Spam Email Detection Preview 3](Preview/Screenshot%202025-09-16%20140619.png)
